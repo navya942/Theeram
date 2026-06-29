@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Tripzy",
+    "slug": "tripzy",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tripzy.app",
+      "config": {
+        "googleMapsApiKey": "YOUR_IOS_GOOGLE_MAPS_API_KEY"
+      },
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Tripzy needs your location to record trips.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Tripzy needs your location to record trips.",
+        "NSLocationAlwaysUsageDescription": "Tripzy needs your location to record trips."
+      }
+    },
+    "android": {
+      "package": "com.tripzy.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_ANDROID_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "react-native-maps",
+        {
+          "config": {
+            "googleMaps": {
+              "iosApiKey": "YOUR_IOS_GOOGLE_MAPS_API_KEY",
+              "androidApiKey": "YOUR_ANDROID_GOOGLE_MAPS_API_KEY"
+            }
+          }
+        }
+      ]
+    ]
+  }
+}
+
+
+
+
